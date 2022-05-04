@@ -9,8 +9,12 @@ body {
   width: 100vw;
   height: 100vh;
   background: var(--red-pastel);
-  display: grid;
-  place-items: center center;
+  /*display: grid;
+  place-items: center center;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
@@ -185,6 +189,33 @@ body {
 
 .bi-github {
   margin-right: 5px;
+}
+
+.final-message {
+  width: 50vmax;
+  /* height: 10%; */
+  font-size: 0.9375rem;
+  /* border: 1px solid #000; */
+  text-align: center;
+  /* margin: 1% 0; */
+  padding: 1% 0;
+  line-height: 22px;
+}
+
+.html5-highlight, .css3-highlight {
+  color: #fff;
+}
+
+.html5-highlight {
+  background: #dd4b25;
+}
+
+.css3-highlight {
+  background: #026fb1;
+}
+
+.bi-heart-fill {
+  color: var(--red-darker);
 }
 
 @keyframes show-card {
