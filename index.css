@@ -1,33 +1,33 @@
 :root {
-  --red-pastel: hsl(0, 100%, 74%);
-  --red-pastel-light: hsl(0, 100%, 90%);
-  --red-darker: hsl(0, 100%, 50%);
+  --light-red: #fcc;
+  --middle-red: #ff7a7a;
+  --dark-red: #f00;
+  --black: #000;
   font: 400 16px 'Righteous', cursive;
+  color: var(--black);
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background: var(--red-pastel);
-  /*display: grid;
-  place-items: center center;*/
-  display: flex;
+  background: var(--middle-red);
+  display: grid;
+  place-items: center center;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.flex {
-  display: flex;
+  align-items: center; */
 }
 
 .flex-column {
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .flex-row {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -39,55 +39,52 @@ body {
   background: #fff;
   border-radius: 20px;
   padding: 20px;
-  animation: show-card 1s linear;
 }
 
-.error {
+.content {
+  width: inherit;
+  height: inherit;
+}
+
+.error-art {
   width: 90%;
   height: 60%;
-}
-
-.description {
-  width: 90%;
-  height: 45%;
-  /* border: 1px solid #000; */
 }
 
 .tooltip {
   width: 80%;
   max-width: 400px;
   height: 40%;
-  background: var(--red-pastel-light);
+  background: var(--light-red);
   border-radius: 20px 0 20px 0;
   position: relative;
 }
 
 .tooltip:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 99%;
   left: 50%;
   margin-left: -16px;
   border-width: 16px;
   border-style: solid;
-  border-color: var(--red-pastel-light) transparent transparent transparent;
+  border-color: var(--light-red) transparent transparent transparent;
 }
 
 .tooltip-text {
   font-size: 1.75rem;
   letter-spacing: 3px;
-  color: var(--red-darker);
+  color: var(--dark-red);
 }
 
 .error-type {
   width: 100%;
   height: 50%;
-  /* border: 1px solid #000; */
 }
 
 .error-number {
-  font-size: 2.875rem; /* VALOR TEMPORÁRIO */
-  color: var(--red-darker);
+  font-size: 2.875rem;
+  color: var(--dark-red);
 }
 
 .ladybug {
@@ -95,100 +92,121 @@ body {
   height: 8vmax;
   max-width: 80px;
   max-height: 80px;
-  /* border: 1px solid #000; */
   position: relative;
   z-index: 1;
 }
 
 .ladybug:before {
-  content: '';
+  content: "";
   width: 30%;
   height: 20%;
-  background: #000;
+  background: var(--black);
   border-radius: 50% 50% 0 0;
   position: absolute;
   top: 0;
   z-index: 2;
 }
 
-.lb-body {
+.ladybug-body {
   width: 80%;
   height: 80%;
-  background: var(--red-darker);
+  background: var(--dark-red);
   border-radius: 50%;
   position: absolute;
   z-index: 3;
 }
 
-.lb-body:before {
-  content: '';
+.ladybug-body:before {
+  content: "";
   width: 0;
   height: 100%;
-  border: 1px solid #000;
+  border: 1px solid var(--black);
+  background: var(--black);
   position: absolute;
 }
 
 .spot {
   width: 20%;
   height: 20%;
-  background: #000;
+  background: var(--black);
   border-radius: 50%;
   position: absolute;
 }
 
-.spot-1 {
-  top: 10%;
-  left: 20%;
-}
+.spot-1, .spot-4 { left: 20%; }
 
-.spot-2 {
-  top: 10%;
-  right: 20%;
-}
+.spot-2, .spot-5 { right: 20%; }
+
+.spot-4, .spot-5 { top: 70%; }
+
+.spot-1 { top: 10%; }
+
+.spot-2 { top: 10%; }
 
 .spot-3 {
   top: 40%;
   left: 40%;
 }
 
-.spot-4 {
-  top: 70%;
-  left: 20%;
+.infos {
+  width: 90%;
+  height: 45%;
 }
 
-.spot-5 {
-  top: 70%;
-  right: 20%;
-}
-
-.error-meaning {
+.error-description {
   font-size: 1.3125rem;
-  color: var(--red-darker);
+  color: var(--dark-red);
 }
 
-.friendly-message {
-  font-size: 1.0625rem;
-  color: #000;
-}
+.message { font-size: 1.0625rem; }
 
-.btn-further {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+.btn-about {
   width: 70%;
-  max-width: 187px;
   height: 40%;
+  max-width: 187px;
   font-size: 1rem;
-  color: #000;
-  background: var(--red-pastel);
-  /* padding: 4%; */
+  background: var(--middle-red);
   border-radius: 6px;
   cursor: pointer;
   animation: btn-background 2s infinite alternate; 
 }
 
-.bi-github {
+@keyframes btn-background {
+  from { background: var(--light-red); }
+  to { background: var(--middle-red); }
+}
+
+/* .bi-github {
   margin-right: 5px;
+} */
+
+/* .bi-heart-fill {
+  color: var(--red-darker);
+} */
+
+@media screen and (min-width: 642px) {
+  .card {
+    width: 50%;
+    height: 70%;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tooltip-text { font-size: 2.5rem; }
+
+  .error-number { font-size: 4.5rem; }
+
+  .error-description { font-size: 2.1875rem; }
+
+  .message { font-size: 1.5625rem; }
+
+  .btn-about {
+    font-size: 1.25rem;
+    padding: 3%;
+  } 
 }
 
 /* .final-message {
@@ -212,47 +230,4 @@ body {
 
 .css3-highlight {
   background: #026fb1;
-}
-
-.bi-heart-fill {
-  color: var(--red-darker);
-} */
-
-@keyframes show-card {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes btn-background {
-  from { background: var(--red-pastel-light); }
-  to { background: var(--red-pastel); }
-}
-
-@media screen and (min-width: 642px) {
-  .card {
-    width: 50%;
-    height: 70%;
-  }
-
-  .tooltip-text {
-    font-size: 2.5rem;
-  }
-
-  .error-number {
-    font-size: 4.5rem;
-  }
-
-  .error-meaning {
-    font-size: 2.1875rem;
-  }
-
-  .friendly-message {
-    font-size: 1.5625rem;
-  }
-
-  .btn-further {
-    font-size: 1.25rem;
-    padding: 3%;
-  }
-  
 }
