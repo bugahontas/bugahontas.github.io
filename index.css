@@ -13,16 +13,12 @@ body {
   background: var(--middle-red);
   display: grid;
   place-items: center center;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -38,12 +34,24 @@ body {
   height: 50vmax;
   background: #fff;
   border-radius: 20px;
-  padding: 20px;
+  /* padding: 20px; */
+  position: relative;
+  z-index: 1;
 }
 
 .content {
   width: inherit;
   height: inherit;
+}
+
+.content-1 {
+  position: absolute;
+  z-index: 2
+}
+
+.content-2 {
+  position: absolute;
+  z-index: 3;
 }
 
 .error-art {
@@ -205,7 +213,7 @@ body {
 
   .btn-about {
     font-size: 1.25rem;
-    padding: 3%;
+    padding: 2%;
   } 
 }
 
