@@ -191,18 +191,18 @@ body {
   margin-right: 5px;
 }
 
-.final-message {
+/* .final-message {
   width: 50vmax;
-  /* height: 10%; */
+  height: 10%;
   font-size: 0.9375rem;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   text-align: center;
-  /* margin: 1% 0; */
+  margin: 1% 0;
   padding: 1% 0;
   line-height: 22px;
-}
+} */
 
-.html5-highlight, .css3-highlight {
+/* .html5-highlight, .css3-highlight {
   color: #fff;
 }
 
@@ -216,7 +216,7 @@ body {
 
 .bi-heart-fill {
   color: var(--red-darker);
-}
+} */
 
 @keyframes show-card {
   from { opacity: 0; }
