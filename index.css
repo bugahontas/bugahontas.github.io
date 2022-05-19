@@ -189,8 +189,8 @@ body {
 .explanation {
   width: 85%;
   height: 67%;
-  padding-top: 1rem;
-  line-height: 25px;
+  /* padding-top: 1rem; */
+  line-height: 1.5rem;
   font-size: 18px;
   text-align: center;
   /* border: 1px solid #000; */
@@ -228,18 +228,22 @@ body {
   .button { font-size: 1.25rem; } 
 
   .explanation {
-    padding-top: 1.625rem;
-    font-size: 28px;
-    line-height: 35px;
+    /* padding-top: 1.625rem; */
+    font-size: 3vw;
+    /* font-size: 28px; */
+    line-height: 2.5rem;
   }
 }
 
+
+
 @media screen and (min-width: 1300px) {
   .explanation {
-    padding-top: 4vmax;
-    line-height: 50px;
+    font-size: 2.5vw;
+    line-height: 55px;
   }
-}
+} 
+
 
 /* .final-message {
   width: 50vmax;
