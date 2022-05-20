@@ -34,35 +34,34 @@ body {
   height: 50vmax;
   background: #fff;
   border-radius: 20px;
-  /* padding: 20px; */
   position: relative;
   z-index: 1;
 }
 
-.content {
-  width: inherit;
-  height: 95%;
-}
+.content { 
+  width: 100%;
+  height: 85%;
+  position: absolute; 
+} 
 
-.content-1 {
-  position: absolute;
-  z-index: 2;
-}
+.content-1 { z-index: 2; }
 
-.content-2 {
-  position: absolute;
-  z-index: 3;
-}
+.content-2 { z-index: 3; }
+
+.content-3 { z-index: 4; }
 
 .error-art {
   width: 90%;
   height: 60%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center center;
 }
 
 .tooltip {
   width: 80%;
+  height: 100%;
   max-width: 400px;
-  height: 40%;
   background: var(--light-red);
   border-radius: 20px 0 20px 0;
   position: relative;
@@ -71,10 +70,10 @@ body {
 .tooltip:after {
   content: "";
   position: absolute;
-  top: 99%;
+  top: 98%;
   left: 50%;
-  margin-left: -16px;
-  border-width: 16px;
+  margin-left: -12px;
+  border-width: 12px;
   border-style: solid;
   border-color: var(--light-red) transparent transparent transparent;
 }
@@ -88,6 +87,7 @@ body {
 .error-type {
   width: 100%;
   height: 50%;
+  align-self: end;
 }
 
 .error-number {
@@ -98,8 +98,8 @@ body {
 .ladybug {
   width: 8vmax;
   height: 8vmax;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 70px;
+  max-height: 70px;
   position: relative;
   z-index: 1;
 }
@@ -156,21 +156,17 @@ body {
   left: 40%;
 }
 
-.infos {
-  width: 90%;
-  height: 45%;
-}
-
 .error-description {
   font-size: 1.3125rem;
   color: var(--dark-red);
+  align-self: end;
 }
 
 .message { font-size: 1.0625rem; }
 
 .button {
-  width: 70%;
-  height: 40%;
+  width: 60%;
+  height: 20%;
   max-width: 187px;
   font-size: 1rem;
   background: var(--middle-red);
@@ -178,8 +174,6 @@ body {
   cursor: pointer;
   animation: btn-background 2s infinite alternate; 
 }
-
-.btn-info { height: 20%; }
 
 @keyframes btn-background {
   from { background: var(--light-red); }
@@ -189,14 +183,17 @@ body {
 .explanation {
   width: 85%;
   height: 67%;
-  /* padding-top: 1rem; */
   line-height: 1.5rem;
   font-size: 18px;
   text-align: center;
   /* border: 1px solid #000; */
 }
 
-.exp-highlight { color: var(--dark-red); }
+.exp-highlight-begin { color: var(--dark-red); }
+
+.exp-highlight-end { color: var(--middle-red); }
+
+.btn-highlight { font-style: italic; }
 
 /* .bi-github {
   margin-right: 5px;
@@ -214,12 +211,12 @@ body {
 
   .content {
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 
   .tooltip-text { font-size: 2.5rem; }
 
-  .error-number { font-size: 4.5rem; }
+  .error-number { font-size: 4.2rem; }
 
   .error-description { font-size: 2.1875rem; }
 
@@ -228,9 +225,7 @@ body {
   .button { font-size: 1.25rem; } 
 
   .explanation {
-    /* padding-top: 1.625rem; */
     font-size: 3vw;
-    /* font-size: 28px; */
     line-height: 2.5rem;
   }
 }

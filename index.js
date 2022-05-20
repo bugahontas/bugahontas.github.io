@@ -5,9 +5,9 @@ $(document).ready(function() {
     $(".content-1").fadeOut(300);
     $(".content-2").fadeIn(800);
   })
-  $(".btn-info").click(function() {
+  $(".btn-why").click(function() {
     $(".content-2").fadeOut(300);
-    $(".content-1").fadeIn(800);
+    $(".content-3").fadeIn(800);
   })
   
 })
