@@ -200,7 +200,7 @@ body {
 
 .highlight-warn { color: var(--dark-red); }
 
-.exp-highlight-end { color: var(--middle-red); }
+.highlight-fun { color: var(--middle-red); }
 
 .btn-highlight { font-style: italic; }
 
@@ -226,7 +226,7 @@ body {
   border-radius: 50%;
 }
 
-.icon-error { background: #f00; }
+.icon-error { background: var(--dark-red); }
 
 .icon-check { background: #6fbb3f; }
 
@@ -248,7 +248,7 @@ body {
 .icon-check:before {
   content: "";
   position: absolute;
-  bottom: 20%;
+  bottom: 21%;
   left: 24%;
   width: 12%;
   height: 35%;
@@ -278,7 +278,9 @@ body {
 .social-icons {
   width: inherit;
   height: 45%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+  background: var(--light-red);
+  border-radius: 20px 0 20px 0;
   margin-top: 8px;
 } 
 
@@ -286,12 +288,17 @@ body {
   margin-right: 1.25rem;
 }
 
-.bi {
-  font-size: 2.5rem;
-
+.bi {  
+  font-size: 2rem; 
+  animation: icon-shadow 2s infinite alternate;
 }
 
 .bi-pinterest { color: #e60023; }
+
+@keyframes icon-shadow {
+  
+  to { top: -10%; }
+}
 
 @media screen and (min-width: 642px) {
   .card {
@@ -299,10 +306,10 @@ body {
     height: 70%;
   }
 
-  .social { 
+  /* .social { 
     font-size: 1.25rem;
     margin-top: 1.4375rem;
-  }
+  } */
 
   .social-icons { margin-top: 1.125rem; }
   
@@ -329,6 +336,8 @@ body {
   }
 
   .reasons li, .solutions li { padding-left: 2.5rem; }
+
+  .bi { font-size: 3.125rem; }
 }
 
 @media screen and (min-width: 1300px) {
@@ -337,27 +346,3 @@ body {
     line-height: 3.4375rem;
   }
 } 
-
-
-/* .final-message {
-  width: 50vmax;
-  height: 10%;
-  font-size: 0.9375rem;
-  border: 1px solid #000;
-  text-align: center;
-  margin: 1% 0;
-  padding: 1% 0;
-  line-height: 22px;
-} */
-
-/* .html5-highlight, .css3-highlight {
-  color: #fff;
-}
-
-.html5-highlight {
-  background: #dd4b25;
-}
-
-.css3-highlight {
-  background: #026fb1;
-}

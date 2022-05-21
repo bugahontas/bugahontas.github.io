@@ -26,5 +26,4 @@ $(document).ready(function() {
     $(".content-5").fadeOut(300);
     $(".content-1").fadeIn(800);
   })
-  
 })
