@@ -263,7 +263,7 @@ body {
   border-radius: 20px 0 20px 0;
 } 
 
-#social-icons a {
+#social-icons li {
   display: inline-block;
   width: 20%;
   height: 72%;
@@ -281,7 +281,7 @@ body {
 
 @keyframes icon-jump { to { top: 0; } }
 
-#social-icons a:not(:last-child) { margin-right: .625rem; }
+#social-icons li:not(:last-child) { margin-right: .625rem; }
 
 .bi { font-size: 2rem; }
 
