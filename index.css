@@ -168,7 +168,7 @@ body {
   align-self: end;
 }
 
-#content-1 p { font-size: 1.0625rem; }
+#content-1>p { font-size: 1.0625rem; }
 
 .button {
   width: 60%;
@@ -304,7 +304,7 @@ body {
 
   #error-art p { font-size: 2.1875rem; }
 
-  #content-1 p { font-size: 1.5625rem; }
+  #content-1>p { font-size: 1.5625rem; }
 
   .button { font-size: 1.25rem; } 
 
