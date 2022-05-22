@@ -1,108 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Helena Maruf (Bugahontas)">
-  <meta name="description" content="Landing page">
+  <meta name="description" content="Main page">
   <title>Error 404</title>
   <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <base target="_blank">
-
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
-
-  <div class="card flex-column" style="display: none;">
-    <!-----------------Slide 1----------------->
-    <div class="content content-1 flex-column" style="display: none;">
-      <div class="error-art">
-        <div class="tooltip flex-row">
-          <span class="tooltip-text">ERROR</span>
+<body class="grid">
+  <div id = "card" class="flex-column" style="display: none;">
+    
+    <!-----------------Content 1----------------->
+    <div id="content-1" class="content flex-column" style="display: none;">
+      <div id="error-art" class="grid">
+        <div  id="tooltip" class="flex-row">
+          <span>ERROR</span>
         </div>
-        <div class="error-type flex-row">
+        <div id="error-type" class="flex-row">
           <span class="error-number">4</span>
-          <div class="ladybug flex-row">
-            <div class="ladybug-body flex-row">
-              <div class="spot spot-1"></div>
-              <div class="spot spot-2"></div>
-              <div class="spot spot-3"></div>
-              <div class="spot spot-4"></div>
-              <div class="spot spot-5"></div>
+          <div id="ladybug" class="flex-row">
+            <div class="flex-row">
+              <div class="spot"></div>
+              <div class="spot"></div>
+              <div class="spot"></div>
+              <div class="spot"></div>
+              <div class="spot"></div>
             </div>
           </div>
           <span class="error-number">4</span>
         </div>
-        <p class="error-description">Page not found</p>
+        <p>Page not found</p>
       </div>
 
-      <p class="message">Relax! Bugs happen...</p>
+      <p>Relax! Bugs happen...</p>
 
-      <div class="button btn-about flex-row"><span>About this page</span></div>
+      <div id="btn-about" class="button flex-row"><span>About this page</span></div>
     </div>
-    <!-----------------Slide 2----------------->
-    <div class="content content-2 flex-column" style="display: none;">
+    
+    <!-----------------Content 2----------------->
+    <div id="content-2" class="content flex-column" style="display: none;">
       <div class="explanation flex-row">
         <p><span class="highlight-warn">Don't worry! No problems here.</span> It's just a web page deliberately designed to show the 404 error in a different way: with <span class="highlight-fun">art</span> and <span class="highlight-fun">fun</span>!</p>
       </div>
 
-      <div class="button btn-what flex-row"><span>What is <span class="btn-highlight">Error 404</span>?</span></div>
+      <div id="btn-what" class="button flex-row"><span>What is <span>Error 404</span>?</span></div>
     </div>
-    <!-----------------Slide 3----------------->
-    <div class="content content-3 flex-column" style="display: none;">
+    
+    <!-----------------Content 3----------------->
+    <div id="content-3" class="content flex-column" style="display: none;">
       <div class="explanation flex-column">
         <p>It's a famous bug caused by:</p>
-        <ul class="reasons">
-          <li><div class="icon-error"></div> Mistyped URLs</li>
-          <li><div class="icon-error"></div> Broken links</li>
-          <li><div class="icon-error"></div> Malwares</li>
-          <li><div class="icon-error"></div>Page is not available</li>
+        <ul id="reasons">
+          <li><div class="icon-error flex-row"></div> Mistyped URLs</li>
+          <li><div class="icon-error flex-row"></div> Broken links</li>
+          <li><div class="icon-error flex-row"></div> Malwares</li>
+          <li><div class="icon-error flex-row"></div>Page is not available</li>
         </ul>
       </div>
 
-      <div class="button btn-fix flex-row"><span>How to fix it?</span></div>
+      <div id="btn-fix" class="button flex-row"><span>How to fix it?</span></div>
     </div>
-    <!-----------------Slide 4----------------->
-    <div class="content content-4 flex-column" style="display: none;">
+    <!-----------------Content 4----------------->
+    <div id="content-4" class="content flex-column" style="display: none;">
       <div class="explanation flex-column">
-        <ul class="solutions">
-          <li><div class="icon-check"></div>Reload the page</li>
-          <li><div class="icon-check"></div>Type URLs correctly</li>
-          <li><div class="icon-check"></div>Remove broken links</li>
-          <li><div class="icon-check"></div>Block malwares</li>
+        <ul id="solutions">
+          <li><div class="icon-check flex-row"></div>Reload the page</li>
+          <li><div class="icon-check flex-row"></div>Type URLs correctly</li>
+          <li><div class="icon-check flex-row"></div>Remove broken links</li>
+          <li><div class="icon-check flex-row"></div>Block malwares</li>
         </ul>
         <p class="highlight-warn">Please report any bugs.</p>
       </div>
     
-      <div class="button btn-finally flex-row"><span>And finally...</span></div>
+      <div id="btn-finally" class="button flex-row"><span>And finally...</span></div>
     </div>
-    <!-----------------Slide 5----------------->
-    <div class="content content-5 flex-column" style="display: none;">
+    
+    <!-----------------Content 5----------------->
+    <div id="content-5" class="content flex-column" style="display: none;">
       <div class="explanation flex-column">
         <p>Website developed by Bugahontas</p>
         <p class="highlight-fun">My social medias:</p>
-        <ul class="social-icons flex-row">
-          <a href="https://github.com/bugahontas">
-            <li>
-              <i class="bi bi-github"></i>
-            </li>
+        <ul id="social-icons" class="flex-row">
+          <a class="flex-row" href="https://github.com/bugahontas">
+            <li><i class="bi bi-github"></i></li>
           </a>
-          <a href="https://br.pinterest.com/bugahontas/">
+          <a class="flex-row" href="https://br.pinterest.com/bugahontas/">
             <li><i class="bi bi-pinterest"></i></li>
           </a>
         </ul>
       </div>
       
-      <div class="button btn-back flex-row"><span>Go back</span></div>
+      <div id="btn-back" class="button flex-row"><span>Go back</span></div>
     </div>
   </div>
-
+  
+  <!------------JavaScript References------------>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="index.js"></script>  
 </body>

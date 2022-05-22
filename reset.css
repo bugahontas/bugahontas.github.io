@@ -24,6 +24,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, 
@@ -47,14 +52,3 @@ table {
 }
 
 *, *:before, *:after { box-sizing: border-box; }
-
-/* button {
-	border: none;
-	background: transparent;
-} */
-
-a {
-	text-decoration: none;
-	color: #000;
-	/* display: block; */
-}
