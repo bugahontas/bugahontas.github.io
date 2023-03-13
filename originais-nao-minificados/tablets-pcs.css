@@ -1,0 +1,55 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 
+CSS para menu de tablets e PCs e outras features (aplicável a dispositivos com largura mínima de 768px) 
+*/
+
+/* Menu para telefones desabilitado */
+nav.phones { display: none; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav.tablets-pcs {
+  display: block;
+  background: var(--pink);
+  padding: 15px;
+}
+
+nav.tablets-pcs ul {
+  gap: 7px;
+  font-size: 1.34375rem;
+}
+ 
+ul a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+ul a:hover { background: var(--dark-pink); }
+
+a img { width: 35px; }
+
+/******************************/
+
+.carousel {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  padding: 20px 0;
+}

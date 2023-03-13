@@ -1,0 +1,124 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* 
+CSS base para smartphones, tablets e PCs (exceto para o menu de navegação, que nesse arquivo tem foco em smartphones seguindo o conceito mobile-first) 
+
+O estilo do menu de navegação e de outras features para tablets e PCs se encontra em tablets-pcs.css 
+*/
+
+:root {
+  --green: #baffc9;
+  --pink: #ffb3ba;
+  --dark-pink: #ff6675;
+  --yellow: #ffffba;
+  --orange: #ffdfba;
+  font-size: 16px;
+}
+
+body { font-family: 'Fredoka One', sans-serif; }
+
+header {
+  background: var(--green);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.img-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+img {
+  width: clamp(55px, 10vw, 100px);
+  height: auto;
+}
+
+h1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: clamp(1.625rem, 5vw, 3.125rem);
+}
+
+header p {
+  margin-top: 20px;
+  font-size: clamp(1.0625rem, 3vmax, 1.5625rem);
+}
+
+.highlight { color: var(--dark-pink); }
+
+/* Menu para celulares */
+
+/* Menu para tablets e pcs desabilitado */
+nav.tablets-pcs { display: none; }
+
+nav.phones {
+  background: var(--pink);
+  padding: 10px;
+  text-align: center;
+}
+
+button[data-bs-toggle] {
+  border: none;
+  background: inherit;
+}
+
+button[data-bs-toggle]::after {
+  content: "Menu";
+  font-size: clamp(1.125rem, 3vmax, 1.5625rem);
+}
+
+.dropdown-menu {
+  background: var(--pink);
+  font-size: clamp(1rem, 3vmax, 1.3125rem);
+  text-align: center;
+}
+
+.dropdown-item img {
+  width: clamp(25px, 5vmax, 35px);
+  height: auto;
+}
+
+/* ************************** */
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+main { background: var(--yellow); }
+
+section {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px 30px;
+}
+
+h2 {
+  font-size: clamp(22px, 3vw, 25px);
+  margin-bottom: 20px;
+  color: var(--dark-pink);
+}
+
+section p { font-size: clamp(1.0625rem, 3vw, 1.25rem); }
+
+section p:not(:last-child) { margin-bottom: 15px; }
+
+footer {
+  background: var(--orange);
+  padding: 20px;
+  text-align: center;
+  font-size: clamp(1rem, 3vmax, 1.25rem);
+}
